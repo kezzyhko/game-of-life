@@ -55,19 +55,6 @@ public class Pattern {
         return Collections.unmodifiableSet(cells);
     }
 
-    public Dimension getSize() {
-        Coords max = new Coords(-1, -1);
-        for (Coords cell : cells) {
-            if (cell.x > max.x) {
-                max.x = cell.x;
-            }
-            if (cell.y > max.y) {
-                max.y = cell.y;
-            }
-        }
-        return new Dimension(max.x + 1, max.y + 1);
-    }
-
     public boolean isAlive(int x, int y) {
         return isAlive(new Coords(x, y));
     }
