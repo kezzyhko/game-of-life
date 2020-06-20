@@ -203,36 +203,6 @@ public final class GameOfLife {
                 setPatternCoords(null);
             }
         });
-        mainPanel.addMouseAdapter(new MouseAdapter() {
-            private void cycleBounds(MouseEvent event) {
-                if (window.isFullscreen) {
-                    try {
-                        new Robot().mouseMove(
-                                Math.floorMod(event.getX() - 1, mainPanel.getWidth() - 2) + 1,
-                                Math.floorMod(event.getY() - 1, mainPanel.getHeight() - 2) + 1
-                        );
-                    } catch (AWTException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-            @Override
-            public void mouseEntered(MouseEvent event) {
-                cycleBounds(event);
-            }
-            @Override
-            public void mouseExited(MouseEvent event) {
-                cycleBounds(event);
-            }
-            @Override
-            public void mouseDragged(MouseEvent event) {
-                cycleBounds(event);
-            }
-            @Override
-            public void mouseMoved(MouseEvent event) {
-                cycleBounds(event);
-            }
-        });
 
 
 
