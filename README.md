@@ -8,9 +8,9 @@ If you are using *IntelliJ IDEA*, you can import this repo using **File > New > 
 ## Features
 
 * **Visual themes.** There are three default themes, and you can add more
-* **Shortcuts.** There are a number of keyboard shortcuts you can use to control the simulation
-* **Patterns.** You can import structures in [RLE](https://www.conwaylife.com/wiki/Run_Length_Encoded) format and then add them in just a few clicks
-* **Command line arguments.** You can limit the field, start in windowed mode or specify the initial state
+* **[Shortcuts](#shortcuts).** There are a number of keyboard shortcuts you can use to control the simulation
+* **[Patterns](#patterns).** You can import structures in [RLE](https://www.conwaylife.com/wiki/Run_Length_Encoded) format and then add them in just a few clicks
+* **[Command line arguments](#command-line-arguments).** You can limit the field, start in windowed mode or specify the initial state
 * Unfortunately, there are no ability to save current state/history in a file
 
 
