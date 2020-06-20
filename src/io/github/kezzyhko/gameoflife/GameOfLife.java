@@ -144,11 +144,11 @@ public final class GameOfLife {
         mainPanel.addKeyBinding("Q", event -> setPattern(pattern.rotatedCCW()));
         mainPanel.addKeyBinding("E", event -> setPattern(pattern.rotatedCW()));
 
-        mainPanel.addKeyBinding("UP", event -> settingsPanel.speedSlider.setValue(settingsPanel.speedSlider.getValue()-DELAY_DELTA));
-        mainPanel.addKeyBinding("DOWN", event -> settingsPanel.speedSlider.setValue(settingsPanel.speedSlider.getValue()+DELAY_DELTA));
+        mainPanel.addKeyBinding("W", event -> settingsPanel.speedSlider.setValue(settingsPanel.speedSlider.getValue()-DELAY_DELTA));
+        mainPanel.addKeyBinding("S", event -> settingsPanel.speedSlider.setValue(settingsPanel.speedSlider.getValue()+DELAY_DELTA));
 
-        mainPanel.addKeyBinding("LEFT", event -> pauseAndGoToState(currentStateIndex-1));
-        mainPanel.addKeyBinding("RIGHT", event -> pauseAndGoToState(currentStateIndex+1));
+        mainPanel.addKeyBinding("A", event -> pauseAndGoToState(currentStateIndex-1));
+        mainPanel.addKeyBinding("D", event -> pauseAndGoToState(currentStateIndex+1));
 
         mainPanel.addMouseAdapter(new MouseAdapter() {
             private Coords getCellCoords(MouseEvent event) {
