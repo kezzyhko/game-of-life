@@ -18,8 +18,6 @@ public class Pattern {
     }
     public Pattern() {}
     public Pattern(String rle) {
-        //TODO: check validity
-
         String[] terms = rle
                 //remove spaces
                 .replaceAll("\\s+", "")
@@ -28,10 +26,12 @@ public class Pattern {
                 //split at letter-digit or digit-letter boundary
                 .split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
 
+        // Any unchecked character will be ignored
+
         int x = 0, y = 0;
         for (int i = 1; i < terms.length; i+=2) {
             int value = Integer.parseInt(terms[i-1]);
-            switch (terms[i].toCharArray()[0]) { //TODO: is it always one char?
+            switch (terms[i].toCharArray()[0]) {
                 case RLE_DEAD:
                     x += value;
                     break;
@@ -46,8 +46,7 @@ public class Pattern {
                     }
                     break;
                 default:
-                    //TODO: check validity
-                    break;
+                    throw new IllegalArgumentException("Illegal symbol in RLE: " + terms[i]);
             }
         }
     }
