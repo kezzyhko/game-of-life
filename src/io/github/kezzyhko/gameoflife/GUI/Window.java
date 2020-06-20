@@ -29,8 +29,9 @@ public class Window extends ContainerWrapper {
     public Window(int innerWidth, int innerHeight) {
         isFullscreen = innerWidth < 0 || innerHeight < 0;
         if (isFullscreen) {
-            theFrame.setUndecorated(true);
-            theFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+            GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(theFrame);
+//            theFrame.setUndecorated(true);
+//            theFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
             Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
             this.innerWidth = d.width;
