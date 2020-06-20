@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GameOfLife - 10x15" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="io.github.kezzyhko.gameoflife.GameOfLife" />
+    <module name="game-of-life" />
+    <option name="PROGRAM_PARAMETERS" value="-s 10 15" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="io.github.kezzyhko.gameoflife.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method />
+  </configuration>
+</component>

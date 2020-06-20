@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="GameOfLife - Gosper glider gun" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="io.github.kezzyhko.gameoflife.GameOfLife" />
+    <module name="game-of-life" />
+    <option name="PROGRAM_PARAMETERS" value="--rle 24bo$22bobo$12b2o6b2o12b2o$11bo3bo4b2o12b2o$2o8bo5bo3b2o$2o8bo3bob2o4bobo$10bo5bo7bo$11bo3bo$12b2o" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="io.github.kezzyhko.gameoflife.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method />
+  </configuration>
+</component>
